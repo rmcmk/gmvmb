@@ -52,13 +52,14 @@ class GradleModuleBuilder : ToolingModelBuilder {
      */
     private fun Project.buildModuleVersion(root: Project): GradleModuleVersion {
         val group = group.toString()
-        val version = version.toString().let {
-            if (this == root || it == DEFAULT_VERSION) {
-                root.version.toString()
-            } else {
-                it
+        val version =
+            version.toString().let {
+                if (this == root || it == DEFAULT_VERSION) {
+                    root.version.toString()
+                } else {
+                    it
+                }
             }
-        }
 
         return DefaultGradleModuleVersion(DefaultModuleVersionIdentifier.newId(group, name, version))
     }

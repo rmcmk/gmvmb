@@ -1,8 +1,8 @@
 package dev.rmcmk.gradle.gmvmb
 
+import org.gradle.tooling.model.GradleModuleVersion
 import org.gradle.tooling.model.Model
 import java.io.Serializable
-import org.gradle.tooling.model.GradleModuleVersion
 
 /**
  * Represents a serializable Gradle module.
