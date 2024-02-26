@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.kotlinter)
 }
 
-group = "com.github.rmcmk.gmvmb"
+group = "dev.rmcmk.gradle.gmvmb"
 version = "1.0.0-RC1"
 
 @Suppress("UnstableApiUsage") gradlePlugin {
