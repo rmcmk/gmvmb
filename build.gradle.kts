@@ -18,7 +18,7 @@ version = "1.0.0-RC1"
 				GmvMB is a Gradle plugin that includes a ModelBuilder of the GradleModuleVersion
                 for extracting the Maven coordinates of a Gradle project and its children.
 			""".trimIndent()
-            id = "gmvmb"
+            id = "dev.rmcmk.gradle.gmvmb"
             tags = setOf("tooling", "model builder", "gspm")
             implementationClass = "dev.rmcmk.gradle.gmvmb.GmvmbPlugin"
         }
